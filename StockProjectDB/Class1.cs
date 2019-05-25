@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StockProject
+namespace StockProjectDB
 {
     public class Class1
     {
