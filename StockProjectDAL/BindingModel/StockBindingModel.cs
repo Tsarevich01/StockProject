@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace StockProject
+namespace StockProjectDAL.BindingModel
 {
-    public class Selling
+    public class StockBindingModel
     {
         public int Id { get; set; }
-
-        public DateTime DataSell { get; set; }
-
     }
 }

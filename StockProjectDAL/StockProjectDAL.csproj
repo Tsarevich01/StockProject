@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66831572-6B9A-4B28-9B5F-0DE284D81871}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StockProjectDAL</RootNamespace>
+    <AssemblyName>StockProjectDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BindingModel\ComponentBindingModel.cs" />
+    <Compile Include="BindingModel\ContractorBindingModel.cs" />
+    <Compile Include="BindingModel\PersonBindingModel.cs" />
+    <Compile Include="BindingModel\ProductBindingModel.cs" />
+    <Compile Include="BindingModel\ProductComponentBindingModel.cs" />
+    <Compile Include="BindingModel\SellingBindingModel.cs" />
+    <Compile Include="BindingModel\StockBindingModel.cs" />
+    <Compile Include="BindingModel\StockComponentBindingModel.cs" />
+    <Compile Include="BindingModel\UnitBindingModel.cs" />
+    <Compile Include="Interface\IComponent.cs" />
+    <Compile Include="Interface\IContractor.cs" />
+    <Compile Include="Interface\IPerson.cs" />
+    <Compile Include="Interface\IProduct.cs" />
+    <Compile Include="Interface\ISelling.cs" />
+    <Compile Include="Interface\IStock.cs" />
+    <Compile Include="Interface\IUnit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\ComponentViewModel.cs" />
+    <Compile Include="ViewModel\ContractorViewModel.cs" />
+    <Compile Include="ViewModel\PersonViewModel.cs" />
+    <Compile Include="ViewModel\ProductComponentViewModel.cs" />
+    <Compile Include="ViewModel\ProductViewModel.cs" />
+    <Compile Include="ViewModel\SellingViewModel.cs" />
+    <Compile Include="ViewModel\StockComponentViewModel.cs" />
+    <Compile Include="ViewModel\StockViewModel.cs" />
+    <Compile Include="ViewModel\UnitViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StockModel\StockModel.csproj">
+      <Project>{bf2db828-e2de-4565-bd5a-ded8ded57066}</Project>
+      <Name>StockModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

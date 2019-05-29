@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace StockProject
+namespace StockProjectDAL.BindingModel
 {
-    public class StockComponent
+    public class StockComponentBindingModel
     {
         public int Id { get; set; }
 
@@ -19,9 +21,5 @@ namespace StockProject
         public int Sum { get; set; }
 
         public int SumInNds { get; set; }
-
-        public virtual Stock Stock { get; set; }
-
-        public virtual Component Component { get; set; }
     }
 }

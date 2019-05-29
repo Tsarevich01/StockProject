@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace StockProject
 {
-    public class Selling
+    public class Unit
     {
         public int Id { get; set; }
 
-        public DateTime DataSell { get; set; }
-
+        [Required]
+        public string UnitName { get; set; }
     }
 }
