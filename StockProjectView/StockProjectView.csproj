@@ -208,5 +208,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StockDB\StockDB.csproj">
+      <Project>{abbc4e2a-24e2-4ce3-9550-cf667f26f698}</Project>
+      <Name>StockDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockModel\StockModel.csproj">
+      <Project>{bf2db828-e2de-4565-bd5a-ded8ded57066}</Project>
+      <Name>StockModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockProjectDAL\StockProjectDAL.csproj">
+      <Project>{66831572-6b9a-4b28-9b5f-0de284d81871}</Project>
+      <Name>StockProjectDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
