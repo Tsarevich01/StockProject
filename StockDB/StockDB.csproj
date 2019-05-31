@@ -51,6 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implementations\ComponentServiceDB.cs" />
+    <Compile Include="Implementations\ContractorServiceDB.cs" />
+    <Compile Include="Implementations\PersonServiceDB.cs" />
+    <Compile Include="Implementations\ProductServiceDB.cs" />
+    <Compile Include="Implementations\StockServiceDB.cs" />
+    <Compile Include="Implementations\UnitServiceDB.cs" />
+    <Compile Include="Migrations\201905311954386_TestM.cs" />
+    <Compile Include="Migrations\201905311954386_TestM.Designer.cs">
+      <DependentUpon>201905311954386_TestM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StockDBContext.cs" />
   </ItemGroup>
@@ -69,7 +80,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Implementations\" />
+    <EmbeddedResource Include="Migrations\201905311954386_TestM.resx">
+      <DependentUpon>201905311954386_TestM.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -14,10 +14,7 @@ namespace StockProject
         [Required]
         public decimal Price { get; set; }
 
-        [ForeignKey("SnackId")]
-        public virtual List<Selling> Sellings { get; set; }
-
-        [ForeignKey("SnackId")]
+        [ForeignKey("ProductId")]
         public virtual List<ProductComponent> ProductComponents { get; set; }
     }
 }

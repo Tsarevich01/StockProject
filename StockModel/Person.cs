@@ -17,7 +17,5 @@ namespace StockProject
         [Required]
         public string Password { get; set; }
 
-        [ForeignKey("PersonId")]
-        public virtual List<Selling> Sellings { get; set; }
     }
 }

@@ -16,5 +16,15 @@ namespace StockProjectView
         {
             InitializeComponent();
         }
+
+        private void labelRegr_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEnter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
