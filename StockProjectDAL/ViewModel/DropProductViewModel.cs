@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StockProjectDAL.ViewModel
 {
-    public class StockViewModel
+    public class DropProductViewModel
     {
         public int Id { get; set; }
 
@@ -16,20 +16,28 @@ namespace StockProjectDAL.ViewModel
         [Required]
         public string ComponentName { get; set; }
 
-        [DisplayName("Количество")]
+        [DisplayName("Единицы измерения")]
         [Required]
-        public int Count { get; set; }
+        public string Unit { get; set; }
 
         [DisplayName("Штрихкод")]
         [Required]
-        public int Barcode { get; set; }
+        public int BarCode { get; set; }
+
+        [DisplayName("Количество")]
+        [Required]
+        public int Count { get; set; }
 
         [DisplayName("Сумма")]
         [Required]
         public int Sum { get; set; }
 
-        [DisplayName("Сумма с НДС")]
+        [DisplayName("Цена")]
         [Required]
-        public int SumInNds { get; set; }
+        public decimal Price { get; set; }
+
+        [DisplayName("Основание")]
+        [Required]
+        public string OsnText { get; set; }
     }
 }
