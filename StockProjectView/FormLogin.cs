@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Unity;
 
 namespace StockProjectView
 {
     public partial class FormLogin : Form
     {
+        [Dependency]
+        public new IUnityContainer Container { get; set; }
         public FormLogin()
         {
             InitializeComponent();
@@ -24,7 +27,8 @@ namespace StockProjectView
 
         private void buttonEnter_Click(object sender, EventArgs e)
         {
-
+            var form = Container.Resolve<FormStocks>();
+            form.ShowDialog();
         }
     }
 }
