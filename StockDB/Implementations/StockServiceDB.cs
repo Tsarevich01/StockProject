@@ -27,6 +27,23 @@ namespace StockDB.Implementations
             .ToList();
             return result;
         }
+
+
+        public void DelElement(int id)
+        {
+            Stock element = context.Stocks.FirstOrDefault(rec => rec.Id == id);
+            if (element != null)
+            {
+                context.Stocks.Remove(element);
+                context.SaveChanges();
+            }
+            else
+            {
+                throw new Exception("Элемент не найден");
+            }
+        }
+
+
         public StockViewModel GetElement(int id)
         {
             Stock element = context.Stocks.FirstOrDefault(rec => rec.Id == id);

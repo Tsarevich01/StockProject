@@ -19,6 +19,10 @@ namespace StockProjectView
             this.service = service;
         }
 
+        public FormLogin()
+        {
+        }
+
         private void labelRegr_Click(object sender, EventArgs e)
         {
 
