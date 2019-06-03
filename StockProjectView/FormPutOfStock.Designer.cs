@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBoxConName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxAdres = new System.Windows.Forms.TextBox();
+            this.textBoxConName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.buttonOk = new System.Windows.Forms.Button();
@@ -57,13 +57,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Поставщик:";
             // 
-            // textBoxConName
-            // 
-            this.textBoxConName.Location = new System.Drawing.Point(7, 20);
-            this.textBoxConName.Name = "textBoxConName";
-            this.textBoxConName.Size = new System.Drawing.Size(187, 20);
-            this.textBoxConName.TabIndex = 0;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -79,6 +72,13 @@
             this.textBoxAdres.Name = "textBoxAdres";
             this.textBoxAdres.Size = new System.Drawing.Size(187, 20);
             this.textBoxAdres.TabIndex = 0;
+            // 
+            // textBoxConName
+            // 
+            this.textBoxConName.Location = new System.Drawing.Point(7, 20);
+            this.textBoxConName.Name = "textBoxConName";
+            this.textBoxConName.Size = new System.Drawing.Size(187, 20);
+            this.textBoxConName.TabIndex = 0;
             // 
             // label2
             // 
@@ -104,6 +104,7 @@
             this.buttonOk.TabIndex = 3;
             this.buttonOk.Text = "OK";
             this.buttonOk.UseVisualStyleBackColor = true;
+            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
             // buttonCancel
             // 
@@ -113,6 +114,7 @@
             this.buttonCancel.TabIndex = 3;
             this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // textBox
             // 
@@ -146,6 +148,7 @@
             this.buttonStamp.TabIndex = 7;
             this.buttonStamp.Text = "Печать накладной";
             this.buttonStamp.UseVisualStyleBackColor = true;
+            this.buttonStamp.Click += new System.EventHandler(this.buttonStamp_Click);
             // 
             // buttonSendToEmail
             // 
@@ -155,6 +158,7 @@
             this.buttonSendToEmail.TabIndex = 7;
             this.buttonSendToEmail.Text = "Отправить по E-mail";
             this.buttonSendToEmail.UseVisualStyleBackColor = true;
+            this.buttonSendToEmail.Click += new System.EventHandler(this.buttonSendToEmail_Click);
             // 
             // FormPutOfStock
             // 
@@ -173,6 +177,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormPutOfStock";
             this.Text = "Поступление товара на склад";
+            this.Load += new System.EventHandler(this.FormPutOfStock_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

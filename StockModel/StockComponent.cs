@@ -12,11 +12,15 @@ namespace StockProject
 
         public int ComponentId { get; set; }
 
+        public int UnitId { get; set; }
+
         public int Count { get; set; }
 
         public int Barcode { get; set; }
 
         public int Sum { get; set; }
+
+        public string UnitName { get; set; }
 
         public int SumInNds { get; set; }
 
