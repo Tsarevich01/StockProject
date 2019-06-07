@@ -21,5 +21,30 @@ namespace StockProjectView
         {
 
         }
+
+        private void buttonReady_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormProducts_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

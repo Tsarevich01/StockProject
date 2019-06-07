@@ -25,7 +25,7 @@ namespace StockProjectView
             InitializeComponent();
             this.service = service;
         }
-
+        
         private void LoadData()
         {
             List<StockViewModel> list = service.GetList();

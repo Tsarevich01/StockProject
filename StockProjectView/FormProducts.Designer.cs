@@ -46,6 +46,7 @@
             this.buttonDel.TabIndex = 0;
             this.buttonDel.Text = "-";
             this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // buttonAdd
             // 
@@ -66,6 +67,7 @@
             this.buttonUpdate.Size = new System.Drawing.Size(50, 50);
             this.buttonUpdate.TabIndex = 0;
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonReady
             // 
@@ -76,6 +78,7 @@
             this.buttonReady.Size = new System.Drawing.Size(50, 50);
             this.buttonReady.TabIndex = 0;
             this.buttonReady.UseVisualStyleBackColor = true;
+            this.buttonReady.Click += new System.EventHandler(this.buttonReady_Click);
             // 
             // buttonCancel
             // 
@@ -86,6 +89,7 @@
             this.buttonCancel.Size = new System.Drawing.Size(50, 50);
             this.buttonCancel.TabIndex = 0;
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // dataGridView1
             // 
@@ -108,6 +112,7 @@
             this.Controls.Add(this.buttonDel);
             this.Name = "FormProducts";
             this.Text = "Номенклатура: группы товаров";
+            this.Load += new System.EventHandler(this.FormProducts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
