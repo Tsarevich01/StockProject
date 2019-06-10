@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.buttonEnter = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
-            this.labelRegr = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonEnter
@@ -46,12 +46,12 @@
             this.buttonEnter.UseVisualStyleBackColor = true;
             this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
-            // textBox1
+            // textBoxPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(55, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 20);
-            this.textBox1.TabIndex = 1;
+            this.textBoxPassword.Location = new System.Drawing.Point(55, 123);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(155, 20);
+            this.textBoxPassword.TabIndex = 1;
             // 
             // textBoxLogin
             // 
@@ -78,26 +78,26 @@
             this.labelPassword.TabIndex = 3;
             this.labelPassword.Text = "Пароль";
             // 
-            // labelRegr
+            // button1
             // 
-            this.labelRegr.AutoSize = true;
-            this.labelRegr.Location = new System.Drawing.Point(93, 175);
-            this.labelRegr.Name = "labelRegr";
-            this.labelRegr.Size = new System.Drawing.Size(72, 13);
-            this.labelRegr.TabIndex = 4;
-            this.labelRegr.Text = "Регистрация";
-            this.labelRegr.Click += new System.EventHandler(this.labelRegr_Click);
+            this.button1.Location = new System.Drawing.Point(91, 178);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Регистрация";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.labelRegr_Click);
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(260, 238);
-            this.Controls.Add(this.labelRegr);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxLogin);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.buttonEnter);
             this.Name = "FormLogin";
             this.Text = "Авторизация";
@@ -109,10 +109,10 @@
         #endregion
 
         private System.Windows.Forms.Button buttonEnter;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.Label labelRegr;
+        private System.Windows.Forms.Button button1;
     }
 }
