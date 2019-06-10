@@ -19,10 +19,6 @@ namespace StockProjectView
             this.service = service;
         }
 
-        public FormLogin()
-        {
-        }
-
         private void labelRegr_Click(object sender, EventArgs e)
         {
 
@@ -30,8 +26,12 @@ namespace StockProjectView
 
         private void buttonEnter_Click(object sender, EventArgs e)
         {
-            var form = Container.Resolve<FormStocks>();
-            form.ShowDialog();
+            
+            
+                var form = Container.Resolve<FormStocks>();
+                form.ShowDialog();
+            
+            
         }
     }
 }

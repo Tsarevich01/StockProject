@@ -54,6 +54,7 @@
             this.buttonAdd.TabIndex = 2;
             this.buttonAdd.Text = "+";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonCancel
             // 
@@ -64,6 +65,7 @@
             this.buttonCancel.Size = new System.Drawing.Size(50, 50);
             this.buttonCancel.TabIndex = 3;
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonReady
             // 
@@ -74,6 +76,7 @@
             this.buttonReady.Size = new System.Drawing.Size(50, 50);
             this.buttonReady.TabIndex = 4;
             this.buttonReady.UseVisualStyleBackColor = true;
+            this.buttonReady.Click += new System.EventHandler(this.buttonReady_Click);
             // 
             // buttonUpdate
             // 
@@ -84,6 +87,7 @@
             this.buttonUpdate.Size = new System.Drawing.Size(50, 50);
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonDel
             // 
@@ -93,6 +97,7 @@
             this.buttonDel.TabIndex = 6;
             this.buttonDel.Text = "-";
             this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // FormComponents
             // 
@@ -107,6 +112,7 @@
             this.Controls.Add(this.buttonDel);
             this.Name = "FormComponents";
             this.Text = "Номенклатура: товары";
+            this.Load += new System.EventHandler(this.FormComponents_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

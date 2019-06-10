@@ -23,7 +23,7 @@ namespace StockProjectView
             var container = BuildUnityContainer();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(container.Resolve<FormLogin>());
         }
 
         public static IUnityContainer BuildUnityContainer()

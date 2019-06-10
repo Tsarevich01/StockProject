@@ -16,5 +16,20 @@ namespace StockProjectView
         {
             InitializeComponent();
         }
+
+        private void FormProduct_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
