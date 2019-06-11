@@ -115,7 +115,7 @@ namespace StockProjectView
                     {
                         textBoxComponentName.Text = view.ContractorName;
                         textBoxCode.Text = view.Code.ToString();
-                        textBoxConact.Text = view.Tel.ToString();
+                        textBoxConact.Text = view.Phone.ToString();
                         textBoxEmail.Text = view.ContractorEmail;
                         textBoxLegalAdres.Text = view.UrAdres;
                     }

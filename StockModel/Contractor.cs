@@ -19,7 +19,7 @@ namespace StockProject
         public string UrAdres { get; set; }
 
         [Required]
-        public int Tel { get; set; }
+        public int Phone { get; set; }
 
         [Required]
         public string ContractorEmail { get; set; }

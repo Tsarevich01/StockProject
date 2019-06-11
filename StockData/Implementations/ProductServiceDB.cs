@@ -1,4 +1,5 @@
-﻿using StockProject;
+﻿using StockData;
+using StockProject;
 using StockProjectDAL.BindingModel;
 using StockProjectDAL.Interface;
 using StockProjectDAL.ViewModel;
@@ -12,8 +13,8 @@ namespace StockDB.Implementations
 {
     public class ProductServiceDB : IProduct
     {
-        private StockDBContext context;
-        public ProductServiceDB(StockDBContext context)
+        private StockDataContext context;
+        public ProductServiceDB(StockDataContext context)
         {
             this.context = context;
         }

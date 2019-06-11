@@ -10,8 +10,8 @@ namespace StockProjectDAL.ViewModel
     {
         public int Id { get; set; }
 
-        public string Наименование { get; set; }
+        public string Name { get; set; }
 
-        public int Штрихкод { get; set; }
+        public int Barcode { get; set; }
     }
 }

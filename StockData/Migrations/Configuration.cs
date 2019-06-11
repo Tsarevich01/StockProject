@@ -1,15 +1,18 @@
-namespace StockDB.Migrations
+namespace StockData.Migrations
 {
+    using System;
+    using System.Data.Entity;
     using System.Data.Entity.Migrations;
+    using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<StockDB.StockDBContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<StockData.StockDataContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(StockDBContext context)
+        protected override void Seed(StockData.StockDataContext context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -14,10 +14,7 @@ namespace StockProject
         [Required]
         public int Barcode { get; set; }
 
-        [ForeignKey("ComponentId")]
         public virtual List<ProductComponent> ProductComponents { get; set; }
-
-        [ForeignKey("ComponentId")]
         public virtual List<StockComponent> StockComponents { get; set; }        
     }
 }

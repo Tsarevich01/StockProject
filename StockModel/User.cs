@@ -1,15 +1,13 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace StockProject
 {
-    public class Person
+    public class User
     {
         public int Id { get; set; }
 
         [Required]
-        public string PersonFIO { get; set; }
+        public string FIO { get; set; }
 
         [Required]
         public string Login { get; set; }

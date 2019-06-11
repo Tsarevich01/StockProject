@@ -26,7 +26,7 @@ namespace StockProjectDAL.ViewModel
 
         [DisplayName("Контакты")]
         [Required]
-        public int Tel { get; set; }
+        public int Phone { get; set; }
 
         [DisplayName("E-mail")]
         [Required]

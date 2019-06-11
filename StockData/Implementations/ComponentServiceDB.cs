@@ -1,4 +1,5 @@
-﻿using StockProjectDAL.BindingModel;
+﻿using StockData;
+using StockProjectDAL.BindingModel;
 using StockProjectDAL.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,8 @@ namespace StockDB.Implementations
 {
     public class ComponentServiceDB : StockProjectDAL.Interface.IComponent
     {
-        private StockDBContext context;
-        public ComponentServiceDB(StockDBContext context)
+        private StockDataContext context;
+        public ComponentServiceDB(StockDataContext context)
         {
             this.context = context;
         }

@@ -80,7 +80,7 @@ namespace StockProjectView
                     UnitViewModel view = service.GetElement(id.Value);
                     if (view != null)
                     {
-                        textBoxComponentName.Text = view.Наименование;
+                        textBoxComponentName.Text = view.Name;
                     }
                 }
                 catch (Exception ex)

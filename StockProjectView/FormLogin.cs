@@ -1,16 +1,14 @@
-﻿using StockDB;
+﻿using StockData;
 using StockProject;
-using StockProjectDAL.Interface;
 using System;
 using System.Linq;
 using System.Windows.Forms;
-using Unity;
 
 namespace StockProjectView
 {
     public partial class FormLogin : Form
     {
-        public Person person { get; private set; }
+        public User person { get; private set; }
 
         public FormLogin()
         {
@@ -39,9 +37,9 @@ namespace StockProjectView
 
         private void SetUser()
         {
-            using (var context = new StockDBContext())
+            using (var context = new StockDataContext())
             {
-                var user = context.Persons.FirstOrDefault(x => x.Login == textBoxLogin.Text && x.Password == textBoxPassword.Text);
+                var user = context.Users.FirstOrDefault(x => x.Login == textBoxLogin.Text && x.Password == textBoxPassword.Text);
                 if (user != null)
                 {
                     person = user;

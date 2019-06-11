@@ -32,8 +32,8 @@ namespace StockProjectView
                     ComponentViewModel view = service.GetElement(id.Value);
                     if (view != null)
                     {
-                        textBoxComponentName.Text = view.Наименование;
-                        textBoxBarcode.Text = view.Штрихкод.ToString();
+                        textBoxComponentName.Text = view.Name;
+                        textBoxBarcode.Text = view.Barcode.ToString();
                     }
                 }
                 catch (Exception ex)

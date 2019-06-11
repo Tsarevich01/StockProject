@@ -9,7 +9,6 @@ namespace StockProject
     {
         public int Id { get; set; }
 
-        [ForeignKey("StockId")]
         public virtual List<StockComponent> StockComponents { get; set; }
     }
 }

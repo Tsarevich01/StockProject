@@ -1,19 +1,18 @@
 ﻿using StockProject;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace StockDB
+namespace StockData
 {
-    public class StockDBContext : DbContext
+    public class StockDataContext : DbContext
     {
-        public StockDBContext() : base("StockDatabase")
+        public StockDataContext() : base()
         {
-            //настройки конфигурации для entity
-            Configuration.ProxyCreationEnabled = false;
-            Configuration.LazyLoadingEnabled = false;
-            var ensureDLLIsCopied =
-           System.Data.Entity.SqlServer.SqlProviderServices.Instance;
-        }
-        public  DbSet<User> Users{ get; set; }
+            Database.SetInitializer(new DropCreateDatabaseAlways<StockDataContext>());
+            var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
+        }    
+
+        public DbSet<User> Users { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Component> Component { get; set; }
         public DbSet<Contractor> Contractors { get; set; }

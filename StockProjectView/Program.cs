@@ -1,11 +1,8 @@
-﻿using StockDB;
+﻿using StockData;
 using StockDB.Implementations;
 using StockProjectDAL.Interface;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Unity;
 using Unity.Lifetime;
@@ -34,7 +31,7 @@ namespace StockProjectView
         {
             var currentContainer = new UnityContainer();
 
-            currentContainer.RegisterType<DbContext, StockDBContext>(new
+            currentContainer.RegisterType<DbContext, StockDataContext>(new
            HierarchicalLifetimeManager());
             currentContainer.RegisterType<IPerson, PersonServiceDB>(new
            HierarchicalLifetimeManager());

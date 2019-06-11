@@ -1,9 +1,9 @@
-namespace StockDB.Migrations
+namespace StockData.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class TestM : DbMigration
+    public partial class Init : DbMigration
     {
         public override void Up()
         {
@@ -48,16 +48,20 @@ namespace StockDB.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         StockId = c.Int(nullable: false),
-                        ComponentId = c.Int(nullable: false),
+                        UnitId = c.Int(nullable: false),
                         Count = c.Int(nullable: false),
                         Barcode = c.Int(nullable: false),
                         Sum = c.Int(nullable: false),
+                        UnitName = c.String(),
                         SumInNds = c.Int(nullable: false),
+                        ComponentId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Components", t => t.ComponentId, cascadeDelete: true)
                 .ForeignKey("dbo.Stocks", t => t.StockId, cascadeDelete: true)
+                .ForeignKey("dbo.Units", t => t.UnitId, cascadeDelete: true)
                 .Index(t => t.StockId)
+                .Index(t => t.UnitId)
                 .Index(t => t.ComponentId);
             
             CreateTable(
@@ -82,17 +86,6 @@ namespace StockDB.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
-                "dbo.People",
-                c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        PersonFIO = c.String(nullable: false),
-                        Login = c.String(nullable: false),
-                        Password = c.String(nullable: false),
-                    })
-                .PrimaryKey(t => t.Id);
-            
-            CreateTable(
                 "dbo.Units",
                 c => new
                     {
@@ -101,20 +94,33 @@ namespace StockDB.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
+            CreateTable(
+                "dbo.Users",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        FIO = c.String(nullable: false),
+                        Login = c.String(nullable: false),
+                        Password = c.String(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
         {
+            DropForeignKey("dbo.StockComponents", "UnitId", "dbo.Units");
             DropForeignKey("dbo.StockComponents", "StockId", "dbo.Stocks");
             DropForeignKey("dbo.StockComponents", "ComponentId", "dbo.Components");
             DropForeignKey("dbo.ProductComponents", "ProductId", "dbo.Products");
             DropForeignKey("dbo.ProductComponents", "ComponentId", "dbo.Components");
             DropIndex("dbo.StockComponents", new[] { "ComponentId" });
+            DropIndex("dbo.StockComponents", new[] { "UnitId" });
             DropIndex("dbo.StockComponents", new[] { "StockId" });
             DropIndex("dbo.ProductComponents", new[] { "ProductId" });
             DropIndex("dbo.ProductComponents", new[] { "ComponentId" });
+            DropTable("dbo.Users");
             DropTable("dbo.Units");
-            DropTable("dbo.People");
             DropTable("dbo.Contractors");
             DropTable("dbo.Stocks");
             DropTable("dbo.StockComponents");

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StockProject
 {
@@ -10,7 +8,7 @@ namespace StockProject
 
         public int StockId { get; set; }
 
-        public int ComponentId { get; set; }
+        public virtual Stock Stock { get; set; }
 
         public int UnitId { get; set; }
 
@@ -24,7 +22,7 @@ namespace StockProject
 
         public int SumInNds { get; set; }
 
-        public virtual Stock Stock { get; set; }
+        public int ComponentId { get; set; }
 
         public virtual Component Component { get; set; }
     }

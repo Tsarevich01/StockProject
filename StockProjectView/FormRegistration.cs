@@ -1,28 +1,18 @@
-﻿using StockDB;
+﻿using StockData;
 using StockProject;
-using StockProjectDAL.BindingModel;
-using StockProjectDAL.Interface;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Unity;
 
 namespace StockProjectView
 {
     public partial class FormRegistration : Form
     {
-        
+
         public FormRegistration()
         {
             InitializeComponent();
         }
-    
+
         private void buttonSave_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxLogin.Text) || string.IsNullOrEmpty(textBoxPassword.Text))
@@ -39,14 +29,15 @@ namespace StockProjectView
             }
             else
             {
-                using (var context = new StockDBContext())
+                using (var context = new StockDataContext())
                 {
-                    var user = context.Persons.Add(new Person
+                    context.Users.Add(new User
                     {
                         Login = textBoxLogin.Text,
                         Password = textBoxPassword.Text,
-                        PersonFIO = textBoxFIO.Text
+                        FIO = textBoxFIO.Text
                     });
+                    context.SaveChanges();
                 }
                 DialogResult = DialogResult.OK;
                 Close();
