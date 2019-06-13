@@ -73,7 +73,7 @@ namespace StockProjectView
                         ContractorName = textBoxComponentName.Text,
                         ContractorEmail = textBoxEmail.Text,
                         UrAdres = textBoxLegalAdres.Text,
-                        Tel = Convert.ToInt32(textBoxConact.Text),
+                        Phone = Convert.ToInt32(textBoxConact.Text),
                         Code = Convert.ToInt32(textBoxCode.Text)
                     });
                 }
@@ -84,7 +84,7 @@ namespace StockProjectView
                         ContractorName = textBoxComponentName.Text,
                         ContractorEmail = textBoxEmail.Text,
                         UrAdres = textBoxLegalAdres.Text,
-                        Tel = Convert.ToInt32(textBoxConact.Text),
+                        Phone = Convert.ToInt32(textBoxConact.Text),
                         Code = Convert.ToInt32(textBoxCode.Text)
                     });
                 }

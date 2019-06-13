@@ -27,7 +27,7 @@ namespace StockDB.Implementations
                 ContractorName = rec.ContractorName,
                 Code = rec.Code,
                 ContractorEmail = rec.ContractorEmail,
-                Tel = rec.Tel,
+                Phone = rec.Phone,
                 UrAdres = rec.UrAdres
             })
             .ToList();
@@ -44,7 +44,7 @@ namespace StockDB.Implementations
                     ContractorEmail = element.ContractorEmail,
                     ContractorName = element.ContractorName,
                     Code = element.Code,
-                    Tel = element.Tel,
+                    Phone = element.Phone,
                     UrAdres = element.UrAdres
                 };
             }
@@ -63,7 +63,7 @@ namespace StockDB.Implementations
                 ContractorName = model.ContractorName,
                 Code = model.Code,
                 ContractorEmail = model.ContractorEmail,
-                Tel = model.Tel,
+                Phone = model.Phone,
                 UrAdres = model.UrAdres
             });
             context.SaveChanges();
@@ -84,7 +84,7 @@ namespace StockDB.Implementations
             element.ContractorName = model.ContractorName;
             element.Code = model.Code;
             element.ContractorEmail = model.ContractorEmail;
-            element.Tel = model.Tel;
+            element.Phone = model.Phone;
             element.UrAdres = model.UrAdres;
             context.SaveChanges();
         }

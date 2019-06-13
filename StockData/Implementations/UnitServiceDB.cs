@@ -24,7 +24,7 @@ namespace StockDB.Implementations
            UnitViewModel
             {
                 Id = rec.Id,
-                Наименование = rec.UnitName
+                Name = rec.UnitName
             })
             .ToList();
             return result;
@@ -37,7 +37,7 @@ namespace StockDB.Implementations
                 return new UnitViewModel
                 {
                     Id = element.Id,
-                    Наименование = element.UnitName
+                    Name = element.UnitName
                 };
             }
             throw new Exception("Элемент не найден");

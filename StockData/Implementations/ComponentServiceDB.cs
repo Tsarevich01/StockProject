@@ -20,8 +20,8 @@ namespace StockDB.Implementations
             new ComponentViewModel
             {
                 Id = rec.Id,
-                Наименование = rec.ComponentName,
-                Штрихкод = rec.Barcode
+                Name = rec.ComponentName,
+                Barcode = rec.Barcode
             })
             .ToList();
             return result;
@@ -34,8 +34,8 @@ namespace StockDB.Implementations
                 return new ComponentViewModel
                 {
                     Id = element.Id,
-                    Наименование = element.ComponentName,
-                    Штрихкод = element.Barcode
+                    Name = element.ComponentName,
+                    Barcode = element.Barcode
                 };
             }
             throw new Exception("Элемент не найден");

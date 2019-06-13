@@ -16,7 +16,7 @@ namespace StockProjectDAL.BindingModel
                  
         public string UrAdres { get; set; }
                  
-        public int Tel { get; set; }
+        public int Phone { get; set; }
                  
         public string ContractorEmail { get; set; }
     }

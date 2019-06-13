@@ -69,6 +69,7 @@
     <Compile Include="ViewModel\ContractorViewModel.cs" />
     <Compile Include="ViewModel\PersonViewModel.cs" />
     <Compile Include="ViewModel\DropProductViewModel.cs" />
+    <Compile Include="ViewModel\ProductComponentViewModel.cs" />
     <Compile Include="ViewModel\ProductViewModel.cs" />
     <Compile Include="ViewModel\SellingViewModel.cs" />
     <Compile Include="ViewModel\Stats.cs" />

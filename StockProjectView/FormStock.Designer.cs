@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxSumInNDS = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBoxConact = new System.Windows.Forms.TextBox();
+            this.textBoxSum = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxLegalAdres = new System.Windows.Forms.TextBox();
+            this.textBoxCount = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,12 +40,12 @@
             this.comboBoxBarcode = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // textBoxEmail
+            // textBoxSumInNDS
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(12, 203);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(192, 20);
-            this.textBoxEmail.TabIndex = 20;
+            this.textBoxSumInNDS.Location = new System.Drawing.Point(12, 203);
+            this.textBoxSumInNDS.Name = "textBoxSumInNDS";
+            this.textBoxSumInNDS.Size = new System.Drawing.Size(192, 20);
+            this.textBoxSumInNDS.TabIndex = 20;
             // 
             // label5
             // 
@@ -56,12 +56,12 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "Сумма с НДС";
             // 
-            // textBoxConact
+            // textBoxSum
             // 
-            this.textBoxConact.Location = new System.Drawing.Point(12, 158);
-            this.textBoxConact.Name = "textBoxConact";
-            this.textBoxConact.Size = new System.Drawing.Size(192, 20);
-            this.textBoxConact.TabIndex = 21;
+            this.textBoxSum.Location = new System.Drawing.Point(12, 158);
+            this.textBoxSum.Name = "textBoxSum";
+            this.textBoxSum.Size = new System.Drawing.Size(192, 20);
+            this.textBoxSum.TabIndex = 21;
             // 
             // label3
             // 
@@ -72,12 +72,12 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Сумма";
             // 
-            // textBoxLegalAdres
+            // textBoxCount
             // 
-            this.textBoxLegalAdres.Location = new System.Drawing.Point(12, 115);
-            this.textBoxLegalAdres.Name = "textBoxLegalAdres";
-            this.textBoxLegalAdres.Size = new System.Drawing.Size(192, 20);
-            this.textBoxLegalAdres.TabIndex = 17;
+            this.textBoxCount.Location = new System.Drawing.Point(12, 115);
+            this.textBoxCount.Name = "textBoxCount";
+            this.textBoxCount.Size = new System.Drawing.Size(192, 20);
+            this.textBoxCount.TabIndex = 17;
             // 
             // label4
             // 
@@ -129,16 +129,17 @@
             this.ClientSize = new System.Drawing.Size(243, 244);
             this.Controls.Add(this.comboBoxBarcode);
             this.Controls.Add(this.comboBoxName);
-            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxSumInNDS);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBoxConact);
+            this.Controls.Add(this.textBoxSum);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBoxLegalAdres);
+            this.Controls.Add(this.textBoxCount);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormStock";
             this.Text = "Добавление на склад";
+            this.Load += new System.EventHandler(this.FormStock_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,11 +147,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textBoxSumInNDS;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxConact;
+        private System.Windows.Forms.TextBox textBoxSum;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxLegalAdres;
+        private System.Windows.Forms.TextBox textBoxCount;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

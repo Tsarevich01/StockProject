@@ -3,7 +3,7 @@ namespace StockData.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Init : DbMigration
+    public partial class initdb : DbMigration
     {
         public override void Up()
         {
@@ -80,7 +80,7 @@ namespace StockData.Migrations
                         ContractorName = c.String(nullable: false),
                         Code = c.Int(nullable: false),
                         UrAdres = c.String(nullable: false),
-                        Tel = c.Int(nullable: false),
+                        Phone = c.Int(nullable: false),
                         ContractorEmail = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);

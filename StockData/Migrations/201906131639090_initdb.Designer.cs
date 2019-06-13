@@ -7,13 +7,13 @@ namespace StockData.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class RenameFields : IMigrationMetadata
+    public sealed partial class initdb : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(RenameFields));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initdb));
         
         string IMigrationMetadata.Id
         {
-            get { return "201906112127174_RenameFields"; }
+            get { return "201906131639090_initdb"; }
         }
         
         string IMigrationMetadata.Source

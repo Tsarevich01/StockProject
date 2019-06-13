@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockProjectDAL.ViewModel
 {
-    public class ProductViewModel
+    class ProductComponentViewModel
     {
-        public int Id { get; set; }
-
-        public string Name { get; set; }
-
-        public int Price { get; set; }
     }
 }
