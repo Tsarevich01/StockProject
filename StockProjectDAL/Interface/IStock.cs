@@ -15,8 +15,7 @@ namespace StockProjectDAL.Interface
         StockViewModel GetElement(int id);
 
         void DelElement(int id);
-
-
-
+        void Stock(StockBindingModel stockBindingModel);
+        void Stock(StockComponentBindingModel stockComponentBindingModel);
     }
 }

@@ -16,5 +16,8 @@ namespace StockProject
 
         [ForeignKey("ProductId")]
         public virtual List<ProductComponent> ProductComponents { get; set; }
+        [ForeignKey("ProductId")]
+        public virtual List<StockComponent> StockComponents { get; set; }
+
     }
 }

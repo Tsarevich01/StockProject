@@ -14,6 +14,10 @@ namespace StockProject
 
         public int Count { get; set; }
 
+        public int ProductId { get; set; }
+
+        public string ProductName { get; set; }
+
         public int Barcode { get; set; }
 
         public int Sum { get; set; }
@@ -25,5 +29,8 @@ namespace StockProject
         public int ComponentId { get; set; }
 
         public virtual Component Component { get; set; }
+
+        public virtual Product Product { get; set; }
+
     }
 }

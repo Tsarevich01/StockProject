@@ -31,7 +31,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxAdres = new System.Windows.Forms.TextBox();
-            this.textBoxConName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.buttonOk = new System.Windows.Forms.Button();
@@ -41,15 +40,16 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonStamp = new System.Windows.Forms.Button();
             this.buttonSendToEmail = new System.Windows.Forms.Button();
+            this.comboBoxContr = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxContr);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBoxAdres);
-            this.groupBox1.Controls.Add(this.textBoxConName);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
@@ -72,13 +72,6 @@
             this.textBoxAdres.Name = "textBoxAdres";
             this.textBoxAdres.Size = new System.Drawing.Size(187, 20);
             this.textBoxAdres.TabIndex = 0;
-            // 
-            // textBoxConName
-            // 
-            this.textBoxConName.Location = new System.Drawing.Point(7, 20);
-            this.textBoxConName.Name = "textBoxConName";
-            this.textBoxConName.Size = new System.Drawing.Size(187, 20);
-            this.textBoxConName.TabIndex = 0;
             // 
             // label2
             // 
@@ -160,6 +153,14 @@
             this.buttonSendToEmail.UseVisualStyleBackColor = true;
             this.buttonSendToEmail.Click += new System.EventHandler(this.buttonSendToEmail_Click);
             // 
+            // comboBoxContr
+            // 
+            this.comboBoxContr.FormattingEnabled = true;
+            this.comboBoxContr.Location = new System.Drawing.Point(6, 21);
+            this.comboBoxContr.Name = "comboBoxContr";
+            this.comboBoxContr.Size = new System.Drawing.Size(187, 21);
+            this.comboBoxContr.TabIndex = 8;
+            // 
             // FormPutOfStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,7 +192,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxAdres;
-        private System.Windows.Forms.TextBox textBoxConName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button buttonOk;
@@ -201,5 +201,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonStamp;
         private System.Windows.Forms.Button buttonSendToEmail;
+        private System.Windows.Forms.ComboBox comboBoxContr;
     }
 }
