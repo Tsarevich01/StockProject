@@ -52,6 +52,10 @@
     <Compile Include="Migrations\201906131639090_initdb.Designer.cs">
       <DependentUpon>201906131639090_initdb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906162050290_CreateTables.cs" />
+    <Compile Include="Migrations\201906162050290_CreateTables.Designer.cs">
+      <DependentUpon>201906162050290_CreateTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="StockDataContext.cs" />
     <Compile Include="Implementations\ComponentServiceDB.cs" />
@@ -79,6 +83,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906131639090_initdb.resx">
       <DependentUpon>201906131639090_initdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906162050290_CreateTables.resx">
+      <DependentUpon>201906162050290_CreateTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
