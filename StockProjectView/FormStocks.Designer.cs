@@ -49,6 +49,7 @@
             this.реализацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.списаниеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.статистикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.изменитьПерсональныеДанныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -146,7 +147,8 @@
             this.номенклатураToolStripMenuItem,
             this.контрагентыToolStripMenuItem,
             this.движениеТоваровToolStripMenuItem,
-            this.статистикаToolStripMenuItem});
+            this.статистикаToolStripMenuItem,
+            this.изменитьПерсональныеДанныеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(616, 24);
@@ -229,6 +231,13 @@
             this.статистикаToolStripMenuItem.Text = "Статистика";
             this.статистикаToolStripMenuItem.Click += new System.EventHandler(this.статистикаToolStripMenuItem_Click);
             // 
+            // изменитьПерсональныеДанныеToolStripMenuItem
+            // 
+            this.изменитьПерсональныеДанныеToolStripMenuItem.Name = "изменитьПерсональныеДанныеToolStripMenuItem";
+            this.изменитьПерсональныеДанныеToolStripMenuItem.Size = new System.Drawing.Size(201, 20);
+            this.изменитьПерсональныеДанныеToolStripMenuItem.Text = "Изменить персональные данные";
+            this.изменитьПерсональныеДанныеToolStripMenuItem.Click += new System.EventHandler(this.изменитьПерсональныеДанныеToolStripMenuItem_Click);
+            // 
             // FormStocks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,5 +287,6 @@
         private System.Windows.Forms.ToolStripMenuItem реализацияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem списаниеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem статистикаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem изменитьПерсональныеДанныеToolStripMenuItem;
     }
 }

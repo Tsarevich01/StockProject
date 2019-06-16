@@ -93,7 +93,7 @@ namespace StockProjectView
 
         private void статистикаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var form = Container.Resolve<FormStatistics>();
+            var form = Container.Resolve<FormReport>();
             form.ShowDialog();
         }
 
@@ -141,6 +141,12 @@ namespace StockProjectView
         private void buttonCreateReport_Click(object sender, EventArgs e)
         {
             var form = Container.Resolve<FormReport>();
+            form.ShowDialog();
+        }
+
+        private void изменитьПерсональныеДанныеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = Container.Resolve<FormRenamePersonalData>();
             form.ShowDialog();
         }
     }
