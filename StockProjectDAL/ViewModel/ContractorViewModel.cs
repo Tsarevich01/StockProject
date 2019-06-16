@@ -12,7 +12,7 @@ namespace StockProjectDAL.ViewModel
     {
         public int Id { get; set; }
 
-        [DisplayName("Названеие")]
+        [DisplayName("Название")]
         [Required]
         public string ContractorName { get; set; }
 
@@ -26,7 +26,7 @@ namespace StockProjectDAL.ViewModel
 
         [DisplayName("Контакты")]
         [Required]
-        public int Phone { get; set; }
+        public string Phone { get; set; }
 
         [DisplayName("E-mail")]
         [Required]

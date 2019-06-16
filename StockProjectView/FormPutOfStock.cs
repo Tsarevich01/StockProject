@@ -74,6 +74,15 @@ namespace StockProjectView
             {
                 stockcomponent = new List<StockComponentViewModel>();
             }
+
+            var list = serviceC.GetList().ToDictionary(x => x.Id, x => x.ContractorName);
+            if (list != null)
+            {
+                comboBoxContr.DataSource = new BindingSource(list, null);
+                comboBoxContr.DisplayMember = "Value";
+                comboBoxContr.ValueMember = "Key";
+                comboBoxContr.SelectedItem = null;
+            }
         }
         public void LoadData()
         {
@@ -87,16 +96,7 @@ namespace StockProjectView
                     dataGridView1.Columns[1].Visible = false;
                     dataGridView1.Columns[2].Visible = false;
                     dataGridView1.Columns[3].Visible = false;
-                }
-                var list = serviceC.GetList().ToDictionary(x => x.Id, x => x.ContractorName);
-                if (list != null)
-                {
-                    comboBoxContr.DataSource = new BindingSource(list, null);
-                    comboBoxContr.DisplayMember = "Value";
-                    comboBoxContr.ValueMember = "Key";
-                    comboBoxContr.SelectedItem = null;
-                }
-                
+                }                
             }
             catch (Exception ex)
             {

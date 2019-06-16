@@ -18,6 +18,6 @@ namespace StockProjectDAL.ViewModel
 
         [DisplayName("Цена")]
         [Required]
-        public int Price { get; set; }
+        public decimal Price { get; set; }
     }
 }

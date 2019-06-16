@@ -25,7 +25,7 @@ namespace StockDB.Implementations
             {
                 Id = rec.Id,
                 Name = rec.ProductName,
-                
+                Price = rec.Price
             })
             .ToList();
             return result;
@@ -38,7 +38,8 @@ namespace StockDB.Implementations
                 return new ProductViewModel
                 {
                     Id = element.Id,
-                    Name = element.ProductName
+                    Name = element.ProductName,
+                    Price = element.Price
                 };
             }
             throw new Exception("Элемент не найден");
@@ -52,7 +53,8 @@ namespace StockDB.Implementations
             }
             context.Products.Add(new Product
             {
-                ProductName = model.ProductName
+                ProductName = model.ProductName,
+                Price = model.Price
             });
             context.SaveChanges();
         }
