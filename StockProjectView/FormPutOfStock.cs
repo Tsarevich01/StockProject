@@ -77,7 +77,6 @@ namespace StockProjectView
             var list = serviceC.GetList().ToDictionary(x => x.Id, x => x.ContractorName);
             if (list != null)
             {
-                //comboBoxContr.DataSource = list;
                 comboBoxContr.DataSource = new BindingSource(list, null);
                 comboBoxContr.DisplayMember = "Value";
                 comboBoxContr.ValueMember = "Key";
