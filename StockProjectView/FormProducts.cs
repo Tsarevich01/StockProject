@@ -34,7 +34,6 @@ namespace StockProjectView
                 {
                     dataGridView1.DataSource = list;
                     dataGridView1.Columns[0].Visible = false;
-                    dataGridView1.Columns[1].Visible = false;
                     dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 }
             }
