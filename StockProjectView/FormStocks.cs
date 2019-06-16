@@ -137,5 +137,11 @@ namespace StockProjectView
         {
             LoadData();
         }
+
+        private void buttonCreateReport_Click(object sender, EventArgs e)
+        {
+            var form = Container.Resolve<FormReport>();
+            form.ShowDialog();
+        }
     }
 }

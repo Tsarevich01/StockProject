@@ -30,7 +30,7 @@ namespace StockProjectView
         private void buttonOk_Click(object sender, EventArgs e)
         {
             
-            if (comboBoxContr.SelectedValue == null)
+            if (textBoxContr.Text == null)
             {
                 MessageBox.Show("Выберите поставщика", "Ошибка", MessageBoxButtons.OK,
                 MessageBoxIcon.Error);
@@ -47,7 +47,8 @@ namespace StockProjectView
 
         private void buttonStamp_Click(object sender, EventArgs e)
         {
-
+            var form = Container.Resolve<FormReport>();
+            form.ShowDialog();
         }
 
         private void buttonSendToEmail_Click(object sender, EventArgs e)
@@ -86,14 +87,7 @@ namespace StockProjectView
                     dataGridView1.Columns[2].Visible = false;
                     dataGridView1.Columns[3].Visible = false;
                 }
-                List<ContractorViewModel> list = serviceC.GetList();
-                if (list != null)
-                {
-                    comboBoxContr.DisplayMember = "Названеие";
-                    comboBoxContr.ValueMember = "Id";
-                    comboBoxContr.DataSource = list;
-                    comboBoxContr.SelectedItem = null;
-                }
+                
             }
             catch (Exception ex)
             {

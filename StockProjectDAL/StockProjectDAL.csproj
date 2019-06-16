@@ -53,6 +53,7 @@
     <Compile Include="BindingModel\PersonBindingModel.cs" />
     <Compile Include="BindingModel\ProductBindingModel.cs" />
     <Compile Include="BindingModel\ProductComponentBindingModel.cs" />
+    <Compile Include="BindingModel\ReportBindingModel.cs" />
     <Compile Include="BindingModel\SellingBindingModel.cs" />
     <Compile Include="BindingModel\StockBindingModel.cs" />
     <Compile Include="BindingModel\StockComponentBindingModel.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Interface\IContractor.cs" />
     <Compile Include="Interface\IPerson.cs" />
     <Compile Include="Interface\IProduct.cs" />
+    <Compile Include="Interface\IReportService.cs" />
     <Compile Include="Interface\ISelling.cs" />
     <Compile Include="Interface\IStock.cs" />
     <Compile Include="Interface\IUnit.cs" />
