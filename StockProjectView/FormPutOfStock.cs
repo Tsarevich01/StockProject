@@ -101,5 +101,13 @@ namespace StockProjectView
             }
         }
 
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            var form = Container.Resolve<FormStock>();
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                LoadData();
+            }
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxContr = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxAdres = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,7 +41,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonStamp = new System.Windows.Forms.Button();
             this.buttonSendToEmail = new System.Windows.Forms.Button();
-            this.comboBoxContr = new System.Windows.Forms.ComboBox();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +57,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Поставщик:";
+            // 
+            // comboBoxContr
+            // 
+            this.comboBoxContr.FormattingEnabled = true;
+            this.comboBoxContr.Location = new System.Drawing.Point(6, 21);
+            this.comboBoxContr.Name = "comboBoxContr";
+            this.comboBoxContr.Size = new System.Drawing.Size(187, 21);
+            this.comboBoxContr.TabIndex = 8;
             // 
             // label1
             // 
@@ -153,19 +162,22 @@
             this.buttonSendToEmail.UseVisualStyleBackColor = true;
             this.buttonSendToEmail.Click += new System.EventHandler(this.buttonSendToEmail_Click);
             // 
-            // comboBoxContr
+            // buttonAdd
             // 
-            this.comboBoxContr.FormattingEnabled = true;
-            this.comboBoxContr.Location = new System.Drawing.Point(6, 21);
-            this.comboBoxContr.Name = "comboBoxContr";
-            this.comboBoxContr.Size = new System.Drawing.Size(187, 21);
-            this.comboBoxContr.TabIndex = 8;
+            this.buttonAdd.Location = new System.Drawing.Point(618, 88);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd.TabIndex = 8;
+            this.buttonAdd.Text = "Добавить";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // FormPutOfStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 406);
+            this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonSendToEmail);
             this.Controls.Add(this.buttonStamp);
             this.Controls.Add(this.dataGridView1);
@@ -202,5 +214,6 @@
         private System.Windows.Forms.Button buttonStamp;
         private System.Windows.Forms.Button buttonSendToEmail;
         private System.Windows.Forms.ComboBox comboBoxContr;
+        private System.Windows.Forms.Button buttonAdd;
     }
 }

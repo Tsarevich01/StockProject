@@ -57,7 +57,15 @@ namespace StockDB.Implementations
             }
             throw new Exception("Элемент не найден");
         }
-        
-        
+
+        public void Stock(StockBindingModel stockBindingModel)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Stock(StockComponentBindingModel stockComponentBindingModel)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
