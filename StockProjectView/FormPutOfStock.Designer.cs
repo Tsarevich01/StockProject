@@ -41,12 +41,14 @@
             this.buttonStamp = new System.Windows.Forms.Button();
             this.buttonSendToEmail = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
+            this.comboBoxContr = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxContr);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBoxContr);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -67,7 +69,7 @@
             // 
             // textBoxContr
             // 
-            this.textBoxContr.Location = new System.Drawing.Point(6, 24);
+            this.textBoxContr.Location = new System.Drawing.Point(7, 63);
             this.textBoxContr.Name = "textBoxContr";
             this.textBoxContr.Size = new System.Drawing.Size(187, 20);
             this.textBoxContr.TabIndex = 0;
@@ -162,6 +164,14 @@
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
+            // comboBoxContr
+            // 
+            this.comboBoxContr.FormattingEnabled = true;
+            this.comboBoxContr.Location = new System.Drawing.Point(7, 23);
+            this.comboBoxContr.Name = "comboBoxContr";
+            this.comboBoxContr.Size = new System.Drawing.Size(187, 21);
+            this.comboBoxContr.TabIndex = 2;
+            // 
             // FormPutOfStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,5 +214,6 @@
         private System.Windows.Forms.Button buttonStamp;
         private System.Windows.Forms.Button buttonSendToEmail;
         private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.ComboBox comboBoxContr;
     }
 }

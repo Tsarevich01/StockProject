@@ -2,6 +2,7 @@
 using StockProjectDAL.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using Unity;
 
@@ -30,7 +31,7 @@ namespace StockProjectView
         private void buttonOk_Click(object sender, EventArgs e)
         {
             
-            if (textBoxContr.Text == null)
+            if (comboBoxContr.Text == null)
             {
                 MessageBox.Show("Выберите поставщика", "Ошибка", MessageBoxButtons.OK,
                 MessageBoxIcon.Error);
@@ -86,6 +87,14 @@ namespace StockProjectView
                     dataGridView1.Columns[1].Visible = false;
                     dataGridView1.Columns[2].Visible = false;
                     dataGridView1.Columns[3].Visible = false;
+                }
+                var list = serviceC.GetList().ToDictionary(x => x.Id, x => x.ContractorName);
+                if (list != null)
+                {
+                    comboBoxContr.DataSource = new BindingSource(list, null);
+                    comboBoxContr.DisplayMember = "Value";
+                    comboBoxContr.ValueMember = "Key";
+                    comboBoxContr.SelectedItem = null;
                 }
                 
             }
