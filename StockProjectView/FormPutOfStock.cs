@@ -112,5 +112,7 @@ namespace StockProjectView
                 LoadData();
             }
         }
+
+        
     }
 }

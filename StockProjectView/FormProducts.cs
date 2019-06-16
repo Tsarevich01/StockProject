@@ -54,7 +54,8 @@ namespace StockProjectView
 
         private void buttonReady_Click(object sender, EventArgs e)
         {
-            LoadData();
+            DialogResult = DialogResult.OK;
+            Close();
         }
 
         private void FormProducts_Load(object sender, EventArgs e)
