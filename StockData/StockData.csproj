@@ -60,6 +60,10 @@
     <Compile Include="Migrations\201906162046267_SecondM.Designer.cs">
       <DependentUpon>201906162046267_SecondM.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906162311129_ThirdM.cs" />
+    <Compile Include="Migrations\201906162311129_ThirdM.Designer.cs">
+      <DependentUpon>201906162311129_ThirdM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201906162311340_StockComponents.cs" />
     <Compile Include="Migrations\201906162311340_StockComponents.Designer.cs">
       <DependentUpon>201906162311340_StockComponents.cs</DependentUpon>
@@ -100,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906162046267_SecondM.resx">
       <DependentUpon>201906162046267_SecondM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906162311129_ThirdM.resx">
+      <DependentUpon>201906162311129_ThirdM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906162311340_StockComponents.resx">
       <DependentUpon>201906162311340_StockComponents.cs</DependentUpon>
