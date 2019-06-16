@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StockProject
 {
@@ -20,6 +21,9 @@ namespace StockProject
 
         public int Barcode { get; set; }
 
+        public string Contractor { get; set; }
+        public int ContractorId { get; set; }
+
         public int Sum { get; set; }
 
         public string UnitName { get; set; }
@@ -32,5 +36,7 @@ namespace StockProject
 
         public virtual Product Product { get; set; }
 
+        public virtual Contractor Contractors { get; set; }
+        public DateTime? DateCreate { get; set; }
     }
 }

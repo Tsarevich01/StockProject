@@ -31,7 +31,7 @@ namespace StockProjectView
         private void buttonOk_Click(object sender, EventArgs e)
         {
             
-            if (comboBoxContr.SelectedValue == null)
+            if (comboBoxContr.Text == null)
             {
                 MessageBox.Show("Выберите поставщика", "Ошибка", MessageBoxButtons.OK,
                 MessageBoxIcon.Error);
@@ -48,7 +48,8 @@ namespace StockProjectView
 
         private void buttonStamp_Click(object sender, EventArgs e)
         {
-
+            var form = Container.Resolve<FormReport>();
+            form.ShowDialog();
         }
 
         private void buttonSendToEmail_Click(object sender, EventArgs e)

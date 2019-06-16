@@ -37,6 +37,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -48,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implementations\ReportServiceDB.cs" />
     <Compile Include="Migrations\201906131639090_initdb.cs" />
     <Compile Include="Migrations\201906131639090_initdb.Designer.cs">
       <DependentUpon>201906131639090_initdb.cs</DependentUpon>
@@ -56,7 +60,16 @@
     <Compile Include="Migrations\201906162050290_CreateTables.Designer.cs">
       <DependentUpon>201906162050290_CreateTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906162046267_SecondM.cs" />
+    <Compile Include="Migrations\201906162046267_SecondM.Designer.cs">
+      <DependentUpon>201906162046267_SecondM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="StockDataContext.cs" />
     <Compile Include="Implementations\ComponentServiceDB.cs" />
     <Compile Include="Implementations\ContractorServiceDB.cs" />
@@ -69,6 +82,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Resources\TIMCYR.TTF" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StockModel\StockModel.csproj">
@@ -86,6 +100,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906162050290_CreateTables.resx">
       <DependentUpon>201906162050290_CreateTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906162046267_SecondM.resx">
+      <DependentUpon>201906162046267_SecondM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

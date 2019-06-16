@@ -36,6 +36,12 @@ namespace StockProjectDAL.ViewModel
         [Required]
         public int Sum { get; set; }
 
+        [DisplayName("Наименование")]
+        [Required]
+        public string Contractor { get; set; }
+
+        public int ContractorId { get; set; }
+
         [DisplayName("Сумма с НДС")]
         [Required]
         public int SumInNds { get; set; }
@@ -43,5 +49,6 @@ namespace StockProjectDAL.ViewModel
         [DisplayName("Цена")]
         [Required]
         public decimal Price { get; set; }
+        public string DateCreate { get; set; }
     }
 }

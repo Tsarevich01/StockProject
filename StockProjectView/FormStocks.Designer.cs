@@ -129,6 +129,7 @@
             this.buttonCreateReport.TabIndex = 9;
             this.buttonCreateReport.Text = "Сформировать отчет";
             this.buttonCreateReport.UseVisualStyleBackColor = true;
+            this.buttonCreateReport.Click += new System.EventHandler(this.buttonCreateReport_Click);
             // 
             // label1
             // 

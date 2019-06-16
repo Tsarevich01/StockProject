@@ -14,7 +14,10 @@ namespace StockProjectDAL.BindingModel
 
         public int ComponentId { get; set; }
 
-        public int ProductId { get; set; }        
+        public int ProductId { get; set; }
+
+        public string Contractor { get; set; }
+        public int ContractorId { get; set; }
 
         public string ProductName { get; set; }
 

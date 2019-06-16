@@ -43,6 +43,7 @@
             this.buttonReport.TabIndex = 0;
             this.buttonReport.Text = "Отчет";
             this.buttonReport.UseVisualStyleBackColor = true;
+            this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
             // 
             // dateTimePicker1
             // 

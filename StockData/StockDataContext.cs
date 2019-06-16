@@ -18,7 +18,7 @@ namespace StockData
         public DbSet<Contractor> Contractors { get; set; }
         //public virtual DbSet<Selling> Sellings { get; set; }
         public DbSet<Stock> Stocks { get; set; }
-        //public virtual DbSet<StockComponent> StockComponents { get; set; }
+        public virtual DbSet<StockComponent> StockComponents { get; set; }
         public DbSet<Unit> Units { get; set; }
         //public virtual DbSet<ProductComponent> ProductComponents { get; set; }
     }

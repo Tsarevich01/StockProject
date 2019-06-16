@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBoxContr = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxAdres = new System.Windows.Forms.TextBox();
+            this.textBoxContr = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.buttonOk = new System.Windows.Forms.Button();
@@ -42,6 +41,7 @@
             this.buttonStamp = new System.Windows.Forms.Button();
             this.buttonSendToEmail = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
+            this.comboBoxContr = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -50,21 +50,13 @@
             // 
             this.groupBox1.Controls.Add(this.comboBoxContr);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBoxAdres);
+            this.groupBox1.Controls.Add(this.textBoxContr);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Поставщик:";
-            // 
-            // comboBoxContr
-            // 
-            this.comboBoxContr.FormattingEnabled = true;
-            this.comboBoxContr.Location = new System.Drawing.Point(6, 21);
-            this.comboBoxContr.Name = "comboBoxContr";
-            this.comboBoxContr.Size = new System.Drawing.Size(187, 21);
-            this.comboBoxContr.TabIndex = 8;
             // 
             // label1
             // 
@@ -75,12 +67,12 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Адрес:";
             // 
-            // textBoxAdres
+            // textBoxContr
             // 
-            this.textBoxAdres.Location = new System.Drawing.Point(6, 66);
-            this.textBoxAdres.Name = "textBoxAdres";
-            this.textBoxAdres.Size = new System.Drawing.Size(187, 20);
-            this.textBoxAdres.TabIndex = 0;
+            this.textBoxContr.Location = new System.Drawing.Point(7, 63);
+            this.textBoxContr.Name = "textBoxContr";
+            this.textBoxContr.Size = new System.Drawing.Size(187, 20);
+            this.textBoxContr.TabIndex = 0;
             // 
             // label2
             // 
@@ -172,6 +164,14 @@
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
+            // comboBoxContr
+            // 
+            this.comboBoxContr.FormattingEnabled = true;
+            this.comboBoxContr.Location = new System.Drawing.Point(7, 23);
+            this.comboBoxContr.Name = "comboBoxContr";
+            this.comboBoxContr.Size = new System.Drawing.Size(187, 21);
+            this.comboBoxContr.TabIndex = 2;
+            // 
             // FormPutOfStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,7 +203,7 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxAdres;
+        private System.Windows.Forms.TextBox textBoxContr;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button buttonOk;
@@ -213,7 +213,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonStamp;
         private System.Windows.Forms.Button buttonSendToEmail;
-        private System.Windows.Forms.ComboBox comboBoxContr;
         private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.ComboBox comboBoxContr;
     }
 }
