@@ -56,13 +56,13 @@
     <Compile Include="Migrations\201906131639090_initdb.Designer.cs">
       <DependentUpon>201906131639090_initdb.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201906162050290_CreateTables.cs" />
-    <Compile Include="Migrations\201906162050290_CreateTables.Designer.cs">
-      <DependentUpon>201906162050290_CreateTables.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201906162046267_SecondM.cs" />
     <Compile Include="Migrations\201906162046267_SecondM.Designer.cs">
       <DependentUpon>201906162046267_SecondM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906162311340_StockComponents.cs" />
+    <Compile Include="Migrations\201906162311340_StockComponents.Designer.cs">
+      <DependentUpon>201906162311340_StockComponents.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -98,11 +98,11 @@
     <EmbeddedResource Include="Migrations\201906131639090_initdb.resx">
       <DependentUpon>201906131639090_initdb.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906162050290_CreateTables.resx">
-      <DependentUpon>201906162050290_CreateTables.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906162046267_SecondM.resx">
       <DependentUpon>201906162046267_SecondM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906162311340_StockComponents.resx">
+      <DependentUpon>201906162311340_StockComponents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

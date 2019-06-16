@@ -8,35 +8,24 @@ namespace StockProject
         public int Id { get; set; }
 
         public int StockId { get; set; }
-
         public virtual Stock Stock { get; set; }
 
         public int UnitId { get; set; }
-
-        public int Count { get; set; }
+        public virtual Unit Unit { get; set; }
 
         public int ProductId { get; set; }
+        public Product Product { get; set; }
 
-        public string ProductName { get; set; }
-
-        public int Barcode { get; set; }
-
-        public string Contractor { get; set; }
         public int ContractorId { get; set; }
-
-        public int Sum { get; set; }
-
-        public string UnitName { get; set; }
-
-        public int SumInNds { get; set; }
+        public virtual Contractor Contractor { get; set; }
 
         public int ComponentId { get; set; }
-
         public virtual Component Component { get; set; }
 
-        public virtual Product Product { get; set; }
-
-        public virtual Contractor Contractors { get; set; }
+        public int Count { get; set; }
+        public int Barcode { get; set; }
+        public int Sum { get; set; }
+        public int SumInNds { get; set; }
         public DateTime? DateCreate { get; set; }
     }
 }

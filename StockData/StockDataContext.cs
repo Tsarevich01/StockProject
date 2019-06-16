@@ -8,7 +8,6 @@ namespace StockData
     {
         public StockDataContext() : base()
         {
-            //Database.SetInitializer(new DropCreateDatabaseAlways<StockDataContext>());
             var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
         }    
 

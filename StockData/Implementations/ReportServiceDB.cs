@@ -24,9 +24,9 @@ namespace StockData.Implementations
         public List<StockComponentViewModel> GetReport(ReportBindingModel model)
         {
             return context.StockComponents
-            .Include(rec => rec.Contractors)
-           .Include(rec => rec.Product)
-           .Include(rec => rec.Component)
+            .Include("Contractors")
+           .Include("Product")
+           .Include("Component")
            .Where(rec => rec.DateCreate >= model.DateFrom &&
            rec.DateCreate <= model.DateTo)
             .Select(rec => new StockComponentViewModel
