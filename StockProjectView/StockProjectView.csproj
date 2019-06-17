@@ -283,20 +283,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StockData\StockData.csproj">
-      <Project>{67923812-4F06-49A4-BB52-274900A448D2}</Project>
-      <Name>StockData</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StockModel\StockModel.csproj">
-      <Project>{bf2db828-e2de-4565-bd5a-ded8ded57066}</Project>
-      <Name>StockModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StockProjectDAL\StockProjectDAL.csproj">
-      <Project>{66831572-6b9a-4b28-9b5f-0de284d81871}</Project>
-      <Name>StockProjectDAL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -322,6 +308,20 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StockData\StockData.csproj">
+      <Project>{67923812-4f06-49a4-bb52-274900a448d2}</Project>
+      <Name>StockData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockModel\StockModel.csproj">
+      <Project>{bf2db828-e2de-4565-bd5a-ded8ded57066}</Project>
+      <Name>StockModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockProjectDAL\StockProjectDAL.csproj">
+      <Project>{66831572-6b9a-4b28-9b5f-0de284d81871}</Project>
+      <Name>StockProjectDAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
