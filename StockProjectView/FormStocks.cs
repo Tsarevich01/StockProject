@@ -13,12 +13,12 @@ namespace StockProjectView
         public new IUnityContainer Container { get; set; }
 
         private readonly IStock service;
-        private readonly IReport serviseS;
-        public FormStocks(IStock service, IReport serviseS)
+        private readonly IReportService serviseS;
+        public FormStocks(IStock service, IReportService serviseS)
         {
             InitializeComponent();
             this.service = service;
-            this.serviseS = serviseS
+            this.serviseS = serviseS;
         }
         
         private void LoadData()

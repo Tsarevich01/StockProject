@@ -16,13 +16,13 @@ namespace StockProjectView
         public int Id { set { id = value; } }
 
         private readonly IStock service;
-        private readonly IReport serviseS;
+        private readonly IReportService serviseS;
         private readonly IContractor serviceC;
         private List<StockComponentViewModel> stockcomponent;
 
         private int? id;
 
-        public FormPutOfStock(IStock service, IContractor serviceC, IReport serviseS)
+        public FormPutOfStock(IStock service, IContractor serviceC, IReportService serviseS)
         {
             InitializeComponent();
             this.service = service;
