@@ -16,16 +16,18 @@ namespace StockProjectView
         public int Id { set { id = value; } }
 
         private readonly IStock service;
+        private readonly IReport serviseS;
         private readonly IContractor serviceC;
         private List<StockComponentViewModel> stockcomponent;
 
         private int? id;
 
-        public FormPutOfStock(IStock service, IContractor serviceC)
+        public FormPutOfStock(IStock service, IContractor serviceC, IReport serviseS)
         {
             InitializeComponent();
             this.service = service;
             this.serviceC = serviceC;
+            this.serviseS = serviseS;
         }
 
         private void buttonOk_Click(object sender, EventArgs e)

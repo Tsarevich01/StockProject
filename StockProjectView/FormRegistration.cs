@@ -29,7 +29,7 @@ namespace StockProjectView
             }
             else
             {
-                using (var context = new StockDataContext())
+                using (var context = new StockDataContext()) 
                 {
                     context.Users.Add(new User
                     {

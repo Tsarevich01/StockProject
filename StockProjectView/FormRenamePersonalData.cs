@@ -32,12 +32,19 @@ namespace StockProjectView
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxFIO.Text))
+            if (string.IsNullOrEmpty(textBoxLogin.Text) || string.IsNullOrEmpty(textBoxPassword.Text))
             {
-                MessageBox.Show("Заполните наименование", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show("Введите логин и(или) пароль");
             }
-            
+            else if (string.IsNullOrEmpty(textBoxFIO.Text))
+            {
+                MessageBox.Show("Введите ФИО");
+            }
+            else if (textBoxPassword.Text != textBoxRepeatPassword.Text)
+            {
+                MessageBox.Show("Пароли не совпадают");
+            }
+
             try
             {
                 if (id.HasValue)
@@ -77,6 +84,7 @@ namespace StockProjectView
                     {
                         textBoxFIO.Text = view.PersonFIO;
                         textBoxLogin.Text = view.Login;
+                        textBoxPassword.Text = view.Password;
                     }
                 }
                 catch (Exception ex)

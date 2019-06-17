@@ -112,8 +112,8 @@ namespace StockProjectView
                 {
                     ProductId = Convert.ToInt32(comboBoxName.SelectedValue),
                     ComponentId = Convert.ToInt32(comboBoxBarcode.SelectedValue),
-                    Count = Convert.ToInt32(textBoxCount.Text),
-                    Sum = Convert.ToInt32(textBoxSum.Text)
+                    Count = Convert.ToDouble(textBoxCount.Text),
+                    Sum = Convert.ToDouble(textBoxSum.Text)
                 });
                 MessageBox.Show("Сохранение прошло успешно", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DialogResult = DialogResult.OK;

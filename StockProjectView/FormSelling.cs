@@ -18,6 +18,8 @@ namespace StockProjectView
         [Dependency]
         public new IUnityContainer Container { get; set; }
 
+        private readonly IReport serviseS;
+
         public int Id { set { id = value; } }
 
         private readonly IStock service;
@@ -26,11 +28,12 @@ namespace StockProjectView
 
         private int? id;
 
-        public FormSelling(IStock service, IContractor serviceC)
+        public FormSelling(IStock service, IContractor serviceC, IReport serviseS)
         {
             InitializeComponent();
             this.service = service;
             this.serviceC = serviceC;
+            this.serviseS = serviseS;
         }
 
         private void buttonOk_Click(object sender, EventArgs e)
